@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Buy and Sell</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="./app.css" rel='stylesheet' type='text/css'>
+
+<script src="./app.js"></script>
+</head>
+<body>
+<h2>Buy and sell Movie Marketplace</h2> 
+<h3>Register your movie</h3>
+<table>
+<tr> <td>
+<label for="movie_name">Movie name</label>
+</td>
+<td>
+<input type="text" name="movie_name" id="movie_name"><br>
+</td></tr> 
+<br> 
+<br>
+    <tr> <td>
+ <label for="cost">Cost</label> </td> <td>
+ <input type="number" name="cost" id="cost"><br>
+</td></tr> 
+
+
+ <tr> <td>
+ <label for="addr">Account Address</label> </td> <td>
+ <input type="text" name="addr" id="addr"><br>
+</td></tr> 
+
+ <br> 
+ <br>
+    <tr> <td>
+ <label for="isAvailableForSale">List for Sale </label> </td> <td>
+
+ <input type="text" min="0" name="isAvailableForSale" id="isAvailableForSale"><br>
+</td></tr> 
+ <br>
+    <br>
+   <tr> <td>
+ <br>
+ <br>
+<tr> <td>
+<input type="submit" onclick="registerMovie()" name="submit" value="Register Movie" /> </td></tr> 
+</table>
+<br>
+<br>
+<h3>List of available Movies</h3>
+<br>
+<tr> <td>
+<input type="submit" onclick="loadMovies()" name="getmovies" value="Get Movies" /></td></tr> 
+<br>
+<div id="mytable">
+
+</body>
+</html>
+
